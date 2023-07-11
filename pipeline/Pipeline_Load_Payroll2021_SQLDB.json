@@ -1,0 +1,34 @@
+{
+	"name": "Pipeline_Load_Payroll2021_SQLDB",
+	"properties": {
+		"activities": [
+			{
+				"name": "df_Load_SQLDB_Payroll",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "df_Load_SQLDB_Payroll",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-07-10T06:37:03Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

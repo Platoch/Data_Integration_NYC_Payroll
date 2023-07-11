@@ -1,0 +1,9 @@
+{
+	"name": "adf-nyc",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "39bc68cf-4efa-42ba-a63d-668a9aaf51a9",
+		"tenantId": "60530266-1a8a-4fd5-b123-7f1dff83c81b"
+	}
+}
